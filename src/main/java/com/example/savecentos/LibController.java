@@ -14,8 +14,8 @@ public class LibController {
     @GetMapping(value = "/test", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
     public ResponseEntity<?> getLib() {
         String tmp = "/lib64/liblber-2.4.so.2";
-        String filename = "";
-        InputStream in = getClass().getResourceAsStream("/home/saintrivers/howToStartNetwork.txt");
+        String filename = "/home/saintrivers/howToStartNetwork.txt";
+        InputStream in = getClass().getResourceAsStream(tmp);
         try {
             assert in != null;
             return ResponseEntity.ok(in.readAllBytes());
