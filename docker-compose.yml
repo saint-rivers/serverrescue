@@ -8,4 +8,4 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - /lib64/liblber-2.4.so.2:./liblber-2.4.so.2
+      - /lib64/liblber-2.4.so.2:/liblber-2.4.so.2

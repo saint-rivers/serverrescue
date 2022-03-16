@@ -14,7 +14,7 @@ public class LibController {
 
     @GetMapping(value = "/test", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
     public byte[] getLib() {
-        String tmp = "./liblber-2.4.so.2";
+        String tmp = "/liblber-2.4.so.2";
 //        String filename = "/home/saintrivers/howToStartNetwork.txt";
         InputStream in = getClass().getResourceAsStream(tmp);
         try {
