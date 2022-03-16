@@ -14,14 +14,10 @@ public class LibController {
 
     @GetMapping(value = "/test", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
     public byte[] getLib() {
-        String tmp = "/lib64/liblber-2.4.so.2";
-        String filename = "/home/saintrivers/howToStartNetwork.txt";
+        String tmp = "./liblber-2.4.so.2";
+//        String filename = "/home/saintrivers/howToStartNetwork.txt";
         InputStream in = getClass().getResourceAsStream(tmp);
         try {
-//            assert in != null;
-//            System.out.println(Arrays.toString(in.readAllBytes()));
-//            return in.readAllBytes();
-
             File path = new File(tmp);
             return method(path);
 

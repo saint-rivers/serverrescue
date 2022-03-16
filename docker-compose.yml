@@ -1,0 +1,11 @@
+version: '2'
+services:
+  message-server:
+    container_name: rescue
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - /lib64/liblber-2.4.so.2:./liblber-2.4.so.2
