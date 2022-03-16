@@ -15,6 +15,7 @@ public class LibController {
         System.out.println(dir);
 //        String tmp = "/liblber-2.4.so.2";
         String tmp = dir + File.separator + "liblber-2.4.so.2";
+        System.out.println("\n\n\n\n"+tmp);
 //        InputStream in = getClass().getResourceAsStream(tmp);
         try {
             File path = new File(tmp);
